@@ -1,0 +1,45 @@
+{
+  "name": "brain.js",
+  "homepage": "https://github.com/brainjs/brain.js",
+  "authors": [
+    "Heather Arthur <fayearthur@gmail.com>"
+  ],
+  "description": "Neural network library",
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "brain",
+    "brainjs",
+    "brain.js",
+    "feed forward",
+    "neural network",
+    "classifier",
+    "neural",
+    "network",
+    "neural-networks",
+    "machine-learning",
+    "synapse",
+    "recurrent",
+    "long short term memory",
+    "gated recurrent unit",
+    "rnn",
+    "lstm",
+    "gru"
+  ],
+  "main": "./browser.js",
+  "ignore": [
+    "node_modules",
+    "test"
+  ],
+  "version": "1.4.10",
+  "_release": "1.4.10",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.4.10",
+    "commit": "d761e8a81071600ea2955da6ad5f56c7f6a60be4"
+  },
+  "_source": "https://github.com/harthur-org/brain.js.git",
+  "_target": "^1.4.10",
+  "_originalSource": "brain.js",
+  "_direct": true
+}

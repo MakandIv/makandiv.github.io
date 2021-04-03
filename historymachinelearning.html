@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A History of Machine Learning</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" text="text/css" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inverse">
+        <a class="navbar-brand" href="../"><img src="/images/Logo.png" alt="Machine Learning" height="40px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../" class="nav-link">Page 1</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main" style="background-image: linear-gradient(-40deg, #86C5FC 0%, #E8C3FD 100%); width: 100%; min-height: 900px">
+        <div id="headerwrap">
+            <div class=col-lg-12>
+                <h1>A History</h1>
+            </div>
+        </div>
+    </div>
+    <div class="body_bg black_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h2><span class="text_border">A History of Machine Learning</span></h2>
+                <p>Machine Learning (ML) is an important aspect of modern business and research. It uses algorithms and neural network models to assist computer systems in progressively improving their performance. Machine Learning algorithms automatically build a mathematical model using sample data – also known as “training data” – to make decisions without being specifically programmed to make those decisions.</p>
+                <p>The first case of neural networks was in 1943, when neurophysiologist Warren McCulloch and mathematician Walter Pitts wrote a paper about neurons, and how they work. They decided to create a model of this using an electrical circuit, and therefore the neural network was born.</p>
+                <p>In 1949, Donald Hebb described his model of brain cell interaction in a book titled <em><a href="http://s-f-walker.org.uk/pubsebooks/pdfs/The_Organization_of_Behavior-Donald_O._Hebb.pdf" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">The Organization of Behavior</a></em> (PDF). The book presents Hebb’s theories on neuron excitement and communication between neurons. Hebb wrote, “When one cell repeatedly assists in firing another, the axon of the first cell develops synaptic knobs (or enlarges them if they already exist) in contact with the soma of the second cell.” Translating Hebb’s concepts to artificial neural networks and artificial neurons, his model can be described as a way of altering the relationships between artificial neurons (also referred to as nodes) and the changes to individual neurons. The relationship between two neurons/nodes strengthens if the two neurons/nodes are activated at the same time and weakens if they are activated separately. The word “weight” is used to describe these relationships, and nodes/neurons tending to be both positive or both negative are described as having strong positive weights. Those nodes tending to have opposite weights develop strong negative weights (e.g. 1×1=1, -1x-1=1, -1×1=-1).</p>
+                <h3><span class="text_border">Machine Learning the Game of Checkers</span></h3>
+                <p>Arthur Samuel of IBM developed a computer program for playing checkers in the 1950s.
+                    Since the program had a very small amount of computer memory available, Samuel initiated what is called alpha-beta pruning.
+                    His design included a scoring function using the positions of the pieces on the board. The scoring function attempted to measure the chances of each side winning. The program chooses its next move using a minimax strategy, which eventually evolved into the minimax algorithm.
+                </p>
+                <p>Samuel also designed a number
+                    of mechanisms allowing his program to become better. In what Samuel called rote
+                    learning, his program recorded/remembered all positions it had already seen and
+                    combined this with the values of the reward function. Arthur Samuel first came
+                    up with the phrase “Machine Learning” in 1952. </p>
+                <div class="text_center">
+                    <h3><span class="text_border">W. Grey Walter and his Turtle Robots</span></h3>
+                </div>
+                <div class="double_block">
+                    <div class="img_left">
+                        <iframe src="https://www.youtube.com/embed/lLULRlmXkKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text_right">
+                        <p style="margin-top: 25px;">Dr. Grey Walter was a neurologist, robotics pioneer. Living in Bristol, England in 1949, without the aid of modern day computer processors, he built reactive, autonomous robots that could wander about and avoid obstacles.</p>
+                        <p>Dr. Grey Walter dubbed his first type of robot “Machina Speculatrix,” because "it explores its environment actively, persistently, systematically as most animals do". The first robots each used one vacuum tube to simulate two interconnected neurons. These simple amplifier circuits connected two sensors to two motors. The first sensor was a photocell and it was connected to the drive and steering motors. The second sensor was a contact switch that indicated that the turtle’s “shell” had bumped into something; this sent the vacuum-tube amplifiers into oscillation and changed the robot’s direction. This circuitry allowed the turtles to wander a room and return to a hutch to recharge their batteries.</p>
+                    </div>
+
+                </div>
+                <div class="text_center">
+                    <p>From the simple neural circuitry, several sophisticated behaviors arose. Under normal operation, the steering motor turned slowly with the drive motor at half speed. This scanned the photocell and produced an arcing motion. When the photocell detected a bright-enough light, the turning stopped and the robot headed towards it. This demonstrated simple phototropic (light attracted) behavior. Once the light detected by the photocell became too bright, though, the steering motor began turning; this demonstrated photophobic (light avoiding) behavior. If the shell struck an object, then the system would oscillate until it successfully avoided the object.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body_bg beige_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h3><span class="text_border">The Perceptron</span></h3>
+            </div>
+            <div class="double_block">
+                <div class="text_left">
+                    <p>In 1957, Frank Rosenblatt – at the Cornell Aeronautical Laboratory – combined Donald Hebb’s model of brain cell interaction with Arthur Samuel’s Machine Learning efforts and created the perceptron.
+                        The perceptron was initially planned as a machine, not a program. The software, originally designed for the IBM 704, was installed in a custom-built machine called the Mark 1 perceptron, which had been constructed for image recognition.
+                        This made the software and the algorithms transferable and available for other machines.&nbsp;</p>
+                    <p>Described as the first
+                        successful neuro-computer, the Mark I perceptron developed some problems with
+                        broken expectations. Although the perceptron seemed promising, it could not
+                        recognize many kinds of visual patterns (such as faces), causing frustration and
+                        stalling neural network research. It would be several years before the
+                        frustrations of investors and funding agencies faded. Neural network/Machine
+                        Learning research struggled until a resurgence during the 1990s. </p>
+                </div>
+                <div class="img_right">
+                    <img src="images/Mark_I_perceptron.png" alt="">
+                </div>
+            </div>
+            <div class="text_center">
+
+                <h3><span class="text_border">The Nearest Neighbor Algorithm</span></h3>
+                <p>In 1967, the nearest neighbor algorithm was conceived, which was the beginning of basic pattern recognition.
+                    This algorithm was used for mapping routes and was one of the earliest algorithms used in finding a solution to the traveling salesperson’s problem of finding the most efficient route.
+                    Using it, a salesperson enters a selected city and repeatedly has the program visit the nearest cities until all have been visited.
+                    Marcello Pelillo has been given credit for inventing the “nearest neighbor rule.” He, in turn, credits the famous <a href="http://garfield.library.upenn.edu/classics1982/A1982NF37700001.pdf" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Cover and Hart paper of 1967</a> (PDF).
+                </p>
+                <h3><span class="text_border">Multilayers Provide the Next Step</span></h3>
+                <p>In the 1960s, the discovery and use of multilayers opened a new path in neural network research.
+                    It was discovered that providing and using two or more layers in the perceptron offered significantly more processing power than a perceptron using one layer.
+                    Other versions of neural networks were created after the perceptron opened the door to “layers” in networks, and the variety of neural networks continues to expand.
+                    The use of multiple layers led to feedforward neural networks and backpropagation.
+                </p>
+                <p>Backpropagation, developed in the 1970s, allows a network to adjust its hidden layers of neurons/nodes to adapt to new situations.
+                    It describes “the backward propagation of errors,” with an error being processed at the output and then distributed backward through the network’s layers for learning purposes.
+                    Backpropagation is now being used to train deep neural networks.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body_bg white_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h3><span class="text_border">Machine Learning and Artificial Intelligence take Separate Paths</span></h3>
+                <p>In the late 1970s and early 1980s, Artificial Intelligence research had focused on using logical, knowledge-based approaches rather than algorithms.
+                    Additionally, neural network research was abandoned by computer science and AI researchers.
+                    This caused a schism between Artificial Intelligence and Machine Learning.
+                    Until then, Machine Learning had been used as a training program for AI.
+                </p>
+                <p>The Machine Learning industry, which included a large number of researchers and technicians, was reorganized into a separate field and struggled for nearly a decade.
+                    The industry goal shifted from training for Artificial Intelligence to solving practical problems in terms of providing services.
+                    Its focus shifted from the approaches inherited from AI research to methods and tactics used in probability theory and statistics.
+                    During this time, the ML industry maintained its focus on neural networks and then flourished in the 1990s.
+                    Most of this success was a result of Internet growth, benefiting from the ever-growing availability of digital data and the ability to share its services by way of the Internet.
+                </p>
+                <h3><span class="text_border">Boosting</span></h3>
+            </div>
+            <div class="double_block">
+                <div class="img_left">
+                    <img src="images/1_jbncjeM4CfpobEnDO0ZTjw.png" alt="">
+                </div>
+                <div class="text_right">
+                    <p>“Boosting” was a necessary development for the evolution of Machine Learning.
+                        Boosting algorithms are used to reduce bias during supervised learning and include ML algorithms that transform weak learners into strong ones.
+                        The concept of boosting was first presented in a 1990 paper titled “The Strength of Weak Learnability,” by Robert Schapire.
+                        Schapire states, “A set of weak learners can create a single strong learner.”
+                        Weak learners are defined as classifiers that are only slightly correlated with the true classification (still better than random guessing).
+                        By contrast, a strong learner is easily classified and well-aligned with the true classification.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text_center">
+                <p>Most boosting algorithms are
+                    made up of repetitive learning weak classifiers, which then add to a final
+                    strong classifier. After being added, they are normally weighted in a way that
+                    evaluates the weak learners’ accuracy. Then the data weights are “re-weighted.”
+                    Input data that is misclassified gains a higher weight, while data classified
+                    correctly loses weight. This environment allows future weak learners to focus
+                    more extensively on previous weak learners that were misclassified.
+                </p>
+                <p>The basic difference between the various types of boosting algorithms is “the technique” used in weighting training data points.
+                    AdaBoost is a popular Machine Learning algorithm and historically significant, being the first algorithm capable of working with weak learners.
+                    More recent algorithms include BrownBoost, LPBoost, MadaBoost, TotalBoost, xgboost, and LogitBoost.
+                    A large number boosting algorithms work within the AnyBoost framework.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="body_bg black_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h3><span class="text_border">Speech Recognition</span></h3>
+                <p>Currently, much of speech recognition training is being done by a Deep Learning technique called Long Short-Term Memory (LSTM), a neural network model described by Jürgen Schmidhuber and Sepp Hochreiter in 1997.
+                    LSTM can learn tasks that require memory of events that took place thousands of discrete steps earlier, which is quite important for speech.
+                </p>
+                <p>Around the year 2007, Long Short-Term Memory started outperforming more traditional speech recognition programs.
+                    In 2015, the Google speech recognition program reportedly had a significant performance jump of 49 percent using a CTC-trained LSTM.
+                </p>
+                <h3><span class="text_border">Facial Recognition Becomes a Reality</span></h3>
+                <p>In 2006, the <em>Face Recognition Grand Challenge</em> – a National Institute of Standards and Technology program – evaluated the popular face recognition algorithms of the time.
+                    3D face scans, iris images, and high-resolution face images were tested.
+                    Their findings suggested the new algorithms were ten times more accurate than the facial recognition algorithms from 2002 and 100 times more accurate than those from 1995.
+                    Some of the algorithms were able to outperform human participants in recognizing faces and could uniquely identify identical twins.
+                </p>
+                <p>In 2012, Google’s X Lab
+                    developed an ML algorithm that can autonomously browse and find videos
+                    containing cats. In 2014, Facebook developed DeepFace, an algorithm capable of
+                    recognizing or verifying individuals in photographs with the same accuracy as
+                    humans.</p>
+                <h3><span class="text_border">Machine Learning at Present</span></h3>
+                <p>Recently, Machine Learning was defined by Stanford University as “the science of getting computers to act without being explicitly programmed.” Machine Learning is now responsible for some of the most significant advancements in technology, such as the new industry of self-driving vehicles.
+                    Machine Learning has prompted a new array of concepts and technologies, including supervised and unsupervised learning, new algorithms for robots, the Internet of Things, analytics tools, chatbots, and more.
+                    Listed below are seven common ways the world of business is currently using Machine Learning:
+                </p>
+                <ul>
+                    <li><strong>Analyzing
+                            Sales Data:</strong> Streamlining the data</li>
+                    <li><strong>Real-Time
+                            Mobile Personalization:</strong> Promoting the experience</li>
+                    <li><strong>Fraud
+                            Detection:</strong> Detecting pattern changes </li>
+                    <li><strong>Product
+                            Recommendations:</strong> Customer personalization</li>
+                    <li><strong>Learning
+                            Management Systems:</strong> Decision-making programs</li>
+                    <li><strong>Dynamic
+                            Pricing:</strong> Flexible pricing based on a need or demand</li>
+                    <li><strong>Natural
+                            Language Processing:</strong> Speaking with humans</li>
+                </ul>
+                <p>Machine Learning models have
+                    become quite adaptive in continuously learning, which makes them increasingly
+                    accurate the longer they operate. ML algorithms combined with new computing
+                    technologies promote scalability and improve efficiency. Combined with business
+                    analytics, Machine Learning can resolve a variety of organizational
+                    complexities. Modern ML models can be used to make predictions ranging from
+                    outbreaks of disease to the rise and fall of stocks.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <h5><span class="text_border" style="color: white">References to sources</span></h5>
+        <div class="references row">
+            <div class="references-colomn col-lg-4">
+                <a href="https://plato.stanford.edu/archives/spr2019/entries/bayes-theorem/">Stanford Encyclopedia of Philosophy Archive</a><br>
+                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1751-5823.1998.tb00406.x">Wiley Online Library</a><br>
+                <a href="https://brilliant.org/wiki/markov-chains/">Brilliant.org</a><br>
+                <a href="https://link.springer.com/article/10.1023/A:1007662407062">link.springer.com</a><br>
+                <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43266.pdf">Recurrent neural network</a><br>
+            </div>
+            <div class="references-colomn col-lg-4">
+                <a href="http://rlbook.busoniu.net/">Reinforcement Learning</a><br>
+                <a href="https://web.archive.org/web/20160417030218/http://ect.bell-labs.com/who/tkh/publications/papers/odt.pdf">Random Forest Algorithm</a><br>
+                <a href="http://image.diku.dk/imagecanon/material/cortes_vapnik95.pdf">Support-vector machine</a><br>
+                <a href="https://web.archive.org/web/20180424203806/https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43905.pdf">LSTM</a><br>
+                <a href="https://www.dataversity.net/a-brief-history-of-machine-learning/">A Brief History of Machine Learning</a><br>
+            </div>
+            <div class="references-colomn col-lg-4">
+                <a href="https://www.dataversity.net/brief-history-deep-learning/">A Brief History of Deep Learning</a><br>
+                <a href="https://www.wordstream.com/blog/ws/2017/07/28/machine-learning-applications">WordStream</a><br>
+                <a href="https://towardsdatascience.com/understanding-neural-networks-19020b758230">Understanding Neural Networks</a><br>
+                <a href="http://web.csulb.edu/~wmartinz/rssc/content/w-grey-walter-and-his-turtle-robots.html">W. Grey Walter and his Turtle Robots</a>
+            </div>
+        </div>
+        <br><br>
+        <p style="margin-bottom: 0;">For Student Science Week:</p>
+        <p class="copyright" style="margin-bottom: 0;">&copy; Skrynnik A.E., Makushkin A.I., 2021</p>
+        <p>Scientific director: Kuzmina E.V.</p>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

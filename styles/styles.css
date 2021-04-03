@@ -23,6 +23,10 @@ a:hover {
     color: aqua;
 }
 
+p {
+    text-align: justify;
+}
+
 h1,
 h2,
 h3,
@@ -76,10 +80,13 @@ h1 {
 }
 
 .main_center {
-    display: flex;
     width: 76%;
     padding: 25px 0;
     margin: 0 auto;
+}
+
+.double_block {
+    display: flex;
 }
 
 .body_bg {
@@ -87,13 +94,14 @@ h1 {
     width: 100%;
 }
 
-.text_right {
+.text_left {
     margin-right: 130px;
     width: 76%;
     padding: 25px 0;
 }
 
-.text_center {}
+.text_center {
+}
 
 .text_right {
     margin-left: 130px;
@@ -127,7 +135,11 @@ h1 {
     transform: scale(1.10);
 }
 
-.black_bg > div > div > h2 {
+.black_bg h2 {
+    color: white;
+}
+
+.black_bg h3 {
     color: white;
 }
 
@@ -135,7 +147,11 @@ h1 {
     color: orange;
 }
 
-p {
+.beige_bg a {
+    color: orange;
+}
+
+.body_bg p, .body_bg ul {
     color: #88888a;
     font-family: Arial;
     margin-top: 25px;

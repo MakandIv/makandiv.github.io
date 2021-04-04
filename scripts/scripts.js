@@ -1,30 +1,4 @@
 var url = location.pathname;
-$('.nav-link').each(function () {
-    var thisURL = $(this).attr('href');
-    thisURL = "/" + thisURL;
-    if (thisURL == url) {
-        $(this).parent('.nav-item').addClass('active');
-        if (url != "/index.php") {
-            $('title').text("Machine Learning | " + $(this).text());
-        }
-    } else if (url == '/') {
-        $('.navbar-nav li:first').addClass('active');
-    }
-});
-$('.dropdown-item').each(function () {
-    var thisURL = $(this).attr('href');
-    thisURL = "/" + thisURL;
-    if (thisURL == url) {
-        $('title').text("Machine Learning | About " + $(this).text());
-    }
-});
-
-$('#option1').on('click', function () {
-    $("iframe").attr('src', 'neuralnetwork1.php');
-});
-$('#option2').on('click', function () {
-    $('iframe').attr('src', 'neuralnetwork2.php');
-});
 
 function scrollTop() {
     $(window).scroll(function (e) {
@@ -64,7 +38,7 @@ $(function () {
 });*/
 
 
-if (location.pathname == '/' || location.pathname == '/index.php') {
+if (location.pathname == '/' || location.pathname == '/index.html') {
     $(document).ready(function () {
     setTimeout(function () {
        $(".loadingbackground").fadeOut(300); 
@@ -78,4 +52,8 @@ if (location.pathname == '/' || location.pathname == '/index.php') {
         $(".loadingbackground").remove();
     });
 }
-Waves.attach('.btn', ['waves-effect']);
+
+function frame_load(iframe) {
+    $(".black_bg:eq(" + (iframe - 1) + ")").append("<iframe name=\"frame1\" src=\"nn2.html\" frameborder=\"0\" class=\"nn1\">Sorry, your browser is not supported.</iframe>");
+    $("#button_nn1").remove();
+}

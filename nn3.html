@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="beige_bg">
+    <div class="braintext">
+        <div class="alert alert-primary">Press "Clear" to clear the entry field.</div>
+        <div class="alert alert-secondary">Press "Save example as..." to save the sample you entered for the neural network.</div>
+        <div class="alert alert-success">Press "Recognise" to have the neural network determine the digit you entered.</div>
+        <div class="alert alert-danger">Press "Reset" to reload the page to clear the history of the neural network.</div>
+    </div>
+    
+    <canvas id="canv" style="display: block">Sorry, your browser is not supported.</canvas>
+
+    <div class="buttonCVB">
+        <button class="btn btn-primary waves-effect CVB" accesskey="c" id="clear">Clear</button><br>
+        <button class="btn btn-primary waves-effect CVB" accesskey="v" id="save">Save example as...</button><br>
+        <button class="btn btn-primary waves-effect CVB" accesskey="b" id="brain">Recognise</button><br>
+        <button class="btn btn-primary waves-effect CVB" accesskey="r" id="reset">Reset</button>
+    </div>
+
+    <div class="buttonnumbers off" id="btnNum">
+        <button class="btn btn-primary waves-effect numbers" accesskey="1" id="b1">1</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="2" id="b2">2</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="3" id="b3">3</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="4" id="b4">4</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="5" id="b5">5</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="6" id="b6">6</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="7" id="b7">7</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="8" id="b8">8</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="9" id="b9">9</button><br>
+        <button class="btn btn-primary waves-effect numbers" accesskey="0" id="b0">0</button>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="bower_components/mnist/dist/mnist.js"></script>
+    <script src="bower_components/brain.js/browser.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="scripts/mnist.js"></script>
+
+</body>
+
+</html>

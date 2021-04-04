@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Neural Network</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" text="text/css" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inverse">
+        <a class="navbar-brand" href="../"><img src="/images/Logo.png" alt="Machine Learning" height="40px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../" class="nav-link">Page 1</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main" style="background-image: linear-gradient(-40deg, #86C5FC 0%, #E8C3FD 100%); width: 100%; min-height: 900px">
+        <div id="headerwrap">
+            <div class="row centered">
+                <div class="col-lg-12">
+                    <h1>Neural Network</h1>
+                </div>
+            </div>
+        </div>
+        <div class="arrow_down">
+
+        </div>
+    </div>
+
+    <div class="body_bg black_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h2><span class="text_border">Automatic selection of the correct color</span></h2>
+                <p>In this module, the neural network tries to match the correct color of the text to the background on which it is located. To start, click on the "Start" button.</p>
+                <button id="button_nn1" onClick="frame_load(1)">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="body_bg beige_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h2><span class="text_border">Teaching the neural network to select the color of the text</span></h2>
+                <p>In this module, you need to select the correct text color for each rectangle. To do this, you must click on one of them. This procedure will be repeated several times. After that, the neural network will be able to automatically select the correct text color for each background.</p>
+
+                <iframe name="frame2" src="nn1.html" frameborder="0" class="nn2">Sorry, your browser is not supported.</iframe>
+            </div>
+        </div>
+    </div>
+    <div class="body_bg white_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h2><span class="text_border">Automatic digit recognition</span></h2>
+                <p>In this module you can interact with a neural network. You are drawing an Arabic digit, and the neural network is trying to understand what kind of figure. </p>
+
+            </div>
+        </div>
+                <iframe name="frame3" src="nn4.html" frameborder="0" class="nn3">Sorry, your browser is not supported.</iframe>
+    </div>
+    <div class="body_bg beige_bg">
+        <div class="main_center">
+            <div class="text_center">
+                <h2><span class="text_border">Teaching to recognize digits</span></h2>
+                <p>In this module, you can train a neural network to recognize Arabic digits. To do this, you need to enter several sample numbers. The neural network will learn from them and will be able to recognize it independently.</p>
+
+            </div>
+            
+        </div>
+        <iframe name="frame4" src="nn3.html" frameborder="0" class="nn4">Sorry, your browser is not supported.</iframe>
+    </div>
+
+    <div class="footer">
+        <h5><span class="text_border" style="color: white">References to sources</span></h5>
+        <div class="references row">
+            <div class="references-colomn col-lg-4">
+                <a href="https://plato.stanford.edu/archives/spr2019/entries/bayes-theorem/">Stanford Encyclopedia of Philosophy Archive</a><br>
+                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1751-5823.1998.tb00406.x">Wiley Online Library</a><br>
+                <a href="https://brilliant.org/wiki/markov-chains/">Brilliant.org</a><br>
+                <a href="https://link.springer.com/article/10.1023/A:1007662407062">link.springer.com</a><br>
+                <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43266.pdf">Recurrent neural network</a><br>
+            </div>
+            <div class="references-colomn col-lg-4">
+                <a href="http://rlbook.busoniu.net/">Reinforcement Learning</a><br>
+                <a href="https://web.archive.org/web/20160417030218/http://ect.bell-labs.com/who/tkh/publications/papers/odt.pdf">Random Forest Algorithm</a><br>
+                <a href="http://image.diku.dk/imagecanon/material/cortes_vapnik95.pdf">Support-vector machine</a><br>
+                <a href="https://web.archive.org/web/20180424203806/https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43905.pdf">LSTM</a><br>
+                <a href="https://www.dataversity.net/a-brief-history-of-machine-learning/">A Brief History of Machine Learning</a><br>
+            </div>
+            <div class="references-colomn col-lg-4">
+                <a href="https://www.dataversity.net/brief-history-deep-learning/">A Brief History of Deep Learning</a><br>
+                <a href="https://www.wordstream.com/blog/ws/2017/07/28/machine-learning-applications">WordStream</a><br>
+                <a href="https://towardsdatascience.com/understanding-neural-networks-19020b758230">Understanding Neural Networks</a><br>
+                <a href="http://web.csulb.edu/~wmartinz/rssc/content/w-grey-walter-and-his-turtle-robots.html">W. Grey Walter and his Turtle Robots</a>
+            </div>
+        </div>
+        <br><br>
+        <p style="margin-bottom: 0;">For Student Science Week:</p>
+        <p class="copyright" style="margin-bottom: 0;">&copy; Skrynnik A.E., Makushkin A.I., 2021</p>
+        <p>Scientific director: Kuzmina E.V.</p>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

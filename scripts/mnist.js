@@ -151,10 +151,6 @@ function pressbtn(num) {
     alert('Saved as ' + num);
 }
 
-if (location.pathname == "/neuralnetwork1.php") {
-    $("body").css("background-color", "#f7f7f7");
-}
-
 let vector = [];
 let net = null;
 let train_data = [];

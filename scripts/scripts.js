@@ -1,14 +1,35 @@
 var url = location.pathname;
+var anim = 0;
+var block1 = 0;
 
 function scrollTop() {
     $(window).scroll(function (e) {
+        $("h1").css("transform", "translateY(" + $(window).scrollTop() * 0.5 + "px)");
         if ($(window).scrollTop() > 0) {
             $("#scroll-top").fadeIn(300);
-            $(".navbar-dark").addClass("bg-dark");
-        } else {
+            if (anim == 0) {
+                $("nav:eq(0)").animate({
+                    opacity: 1
+                });
+                anim = 1;
+            }
+        }
+        if ($(window).scrollTop() > ($("#headerwrap").height() - $(window).innerHeight() + 50)) {
+            if (block1 == 0) {
+                $("h2:eq(0)").animate({
+                    marginTop: 20
+                });
+                block1 = 1;
+            }
+        }
+        if ($(window).scrollTop() == 0) {
             $("#scroll-top").fadeOut(300);
-            $(".navbar-dark").removeClass("bg-dark");
-            
+            if (anim == 1) {
+                $("nav:eq(0)").animate({
+                    opacity: 0.5
+                });
+                anim = 0;
+            }
         }
     });
 }
@@ -28,6 +49,10 @@ $(function () {
     scrollTop();
 });
 
+if (url == "/index.html" || url == "/") {
+    $("h1:eq(0)").css("fontSize", "70px");
+}
+
 /*$(function () {
     $(".arrow_down").prepend($('<a href="#text"><i class="fa fa-angle-down fa-5x"></i></a>')
         .attr({
@@ -38,22 +63,11 @@ $(function () {
 });*/
 
 
-if (location.pathname == '/' || location.pathname == '/index.html') {
-    $(document).ready(function () {
-    setTimeout(function () {
-       $(".loadingbackground").fadeOut(300); 
-    }, 2200);
-    setTimeout(function () {
-        $(".loadingbackground").remove();
-    }, 2500);
-});
-} else {
-    $(document).ready(function () {
-        $(".loadingbackground").remove();
-    });
-}
-
 function frame_load(iframe) {
     $(".black_bg:eq(" + (iframe - 1) + ")").append("<iframe name=\"frame1\" src=\"nn2.html\" frameborder=\"0\" class=\"nn1\">Sorry, your browser is not supported.</iframe>");
     $("#button_nn1").remove();
 }
+
+$(document).ready(function () {
+    $("h2:eq(0)").css("marginTop", "100px");
+});

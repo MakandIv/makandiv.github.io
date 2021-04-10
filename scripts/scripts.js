@@ -1,6 +1,7 @@
 var url = location.pathname;
 var anim = 0;
-var block1 = 0;
+var num_block = 0;
+var height = 50;
 
 function scrollTop() {
     $(window).scroll(function (e) {
@@ -14,13 +15,12 @@ function scrollTop() {
                 anim = 1;
             }
         }
-        if ($(window).scrollTop() > ($("#headerwrap").height() - $(window).innerHeight() + 50)) {
-            if (block1 == 0) {
-                $("h2:eq(0)").animate({
-                    marginTop: 20
-                });
-                block1 = 1;
-            }
+        if ($(window).scrollTop() > (height)) {
+            $(".main_center:eq(" + num_block + ")").animate({
+                paddingTop: 25
+            });
+            height += $(".main_center:eq(" + num_block + ")").parent().height();
+            num_block++;
         }
         if ($(window).scrollTop() == 0) {
             $("#scroll-top").fadeOut(300);
@@ -69,5 +69,8 @@ function frame_load(iframe) {
 }
 
 $(document).ready(function () {
-    $("h2:eq(0)").css("marginTop", "100px");
+    $(".main_center").each(function () {
+        $(this).css("paddingTop", "100px");
+    });
+    scrollTop();
 });

@@ -3,16 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Neural Network Tools</title>
+    <title>Neural Network Tools | Machine Learning</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-awesome.min.css" crossorigin="anonymous">
     <link href="styles/styles.css" rel="stylesheet" text="text/css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/preloader.css">
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inverse bg-dark">
-        <a class="navbar-brand" href="../"><img src="/images/Logo.png" alt="Machine Learning" height="40px"></a>
+    <div class="load">
+        <div class="container">
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inverse bg-dark">
+        <a class="navbar-brand" href="../"><img class="logo" src="/images/Logo.png" alt="Machine Learning" height="40px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,93 +43,85 @@
                 <li class="nav-item">
                     <a href="neuralnetwork.html" class="nav-link">Neural Network</a>
                 </li>
+                <li>
+                    <a href="sources.html" class="nav-link">Sources</a>
+                </li>
             </ul>
         </div>
     </nav>
-    <div class="main" style="background-image: linear-gradient(-40deg, #86C5FC 0%, #E8C3FD 100%)">
+    <div class="main" style="background-image: url(images/company.webp);">
         <div id="headerwrap">
             <div class="row centered">
                 <div class="col-lg-12">
-                    <h1>Neural Network Tools</h1>
+                    <h1 style="color: white;  text-shadow: 0px 2px 0 rgb(0, 0, 0), 0px -2px 0 rgb(0, 0, 0), 2px 0px 0 rgb(0, 0, 0), -2px 0px 0 rgb(0, 0, 0), 2px 2px 0 rgb(0, 0, 0), 2px -2px 0 rgb(0, 0, 0), -2px 2px 0 rgb(0, 0, 0), -2px -2px 0 rgb(0, 0, 0);">Neural Network Tools</h1>
                 </div>
             </div>
         </div>
-        <div class="arrow_down">
+    </div>
+    <div class="body_bg black_bg" style="min-height: 100px">
+        <div class="main_center">
+            <div class="text_center">
+                <h2><span class="text_border">How to work with neural networks?</span></h2>
+                <p>To work effectively with neural networks, you can use the following tools.</p>
 
+                <h3><span class="text_border">Brain.js</span></h3>
+                <img class="left" src="images/brainjs.jpg" alt="">
+                <p>«Brain.js» is a GPU accelerated library of neural networks written in «<b>JavaScript</b>» for browsers and «<b>Node.js</b>». It is simple, fast and easy to use. It provides multiple neural network implementations as different neural nets can be trained to do different things well. All neural networks on this site were created using this library.</p>
+                <p>«Brain.js» is great for quickly creating a simple NN in a high-level language where you can take advantage of the <b>huge number of open source libraries</b>. With a good dataset and a few lines of code you can create some really interesting functionality.</p>
+            </div>
         </div>
     </div>
     <div class="body_bg black_bg">
         <div class="main_center">
             <div class="text_center">
-                <h2><span class="text_border">How to work with neural networks?</span></h2>
-                <p>A library is required to design neural networks.</p>
+                <h3><span class="text_border">TensorFlow</span></h3>
+                <img class="left" src="images/TensorFlow.png" alt="">
+                <p>A library from Google designed specifically for training neural networks. For processing large amounts of data, it uses a multi-level system of nodes, which expands the scope far beyond the scientific field.</p>
+                <p>TensorFlow is a comprehensive <b>open source machine learning platform</b>. It has a comprehensive, flexible ecosystem of tools, libraries, and community resources that enables researchers to drive the latest advances in machine learning, and it is easy for developers to build and deploy machine learning-based applications.</p>
             </div>
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/brainjs.jpg" alt="">
-                </div>
-                <div class="text_right">
-                    <h3><span class="text_border">Brain.js</span></h3>
-                    <p>Brain.js is a GPU accelerated library of neural networks written in JavaScript for browsers and Node.js. It is simple, fast and easy to use. It provides multiple neural network implementations as different neural nets can be trained to do different things well. All neural networks on this site were created using this library.</p>
-                </div>
+        </div>
+    </div>
+    <div class="body_bg beige_bg" style="min-height: 350px">
+        <div class="main_center">
+            <div class="text_center">
+                <h3><span class="text_border">Synaptic</span></h3>
+                <img class="left" src="images/Synaptic.png" alt="">
+                <p>Synaptic is a Javascript neural network library <b>for node.js and the browser</b> that allows you to train first and second order neural network architectures. </p>
+                <p>This library <b>includes a few built-in architectures</b> like multilayer perceptrons, multilayer long-short term memory networks (LSTM), liquid state machines or Hopfield networks, and a trainer capable of training any given network, which includes built-in training tasks/tests like solving an XOR, completing a Distracted Sequence Recall task or an Embedded Reber Grammar test, so you can easily test and compare the performance of different architectures.</p>
             </div>
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/TensorFlow.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h3><span class="text_border">TensorFlow</span></h3>
-                    <p>A library from Google designed specifically for training neural networks. For processing large amounts of data, it uses a multi-level system of nodes, which expands the scope far beyond the scientific field.</p>
-                </div>
-            </div>
+
         </div>
     </div>
     <div class="body_bg beige_bg">
         <div class="main_center">
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/Synaptic.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h3><span class="text_border">Synaptic</span></h3>
-                    <p>Synaptic is a Javascript neural network library for node.js and the browser that allows you to train first and second order neural network architectures. The project contains several built-in architectures - a multilayer perceptron, a multilayer long short-term memory network, a liquid state machine (LSM), and a trainer capable of training networks.</p>
-                </div>
-
-            </div>
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/Theano_logo.svg" alt="">
-                </div>
-                <div class="text_right">
+            <div class="text_center">
+                <div class="text_center">
                     <h3><span class="text_border">Theano</span></h3>
-                    <p>Fundamental library with mathematical objects and neural networks. Compatible with Python 2 and 3. One of the most powerful, used for fast and high-precision calculations. Benefits:
-                        - tight integration with NumPy;
-                        - the use of GPU and CPU to increase performance;
-                        - built-in code optimization mechanisms;
-                        - there are extensions for self-testing and unit testing.</p>
+                    <img class="left" src="images/Theano_logo.svg" alt="">
+                    <p>Theano has been developed since 2007 mainly by the MILA group at the University of Montreal and is named after the ancient Greek woman philosopher and mathematician Feano (presumably pictured).</p>
+                    <p>Fundamental library with mathematical objects and neural networks. Compatible with Python 2 and 3. One of the most powerful, <b>used for fast and high-precision calculations</b>. Benefits: - tight integration with NumPy; - the use of GPU and CPU to increase performance; - built-in code optimization mechanisms; - there are extensions for self-testing and unit testing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="body_bg white_bg" style="min-height: 300px">
+            <div class="main_center">
+                <div class="text_center">
+                    <h3><span class="text_border">Neataptic</span></h3>
+                    <img class="left" src="images/Neataptic.jpg" alt="">
+                    <p>This library provides the ability to <b>quickly perform neuroevolution</b> and backpropagation for the browser and Node.js. The library contains several built-in networks - perceptron, LSTM, GRU, Nark and others.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="body_bg white_bg">
         <div class="main_center">
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/Neataptic.jpg" alt="">
-                </div>
-                <div class="text_right">
-                    <h3><span class="text_border">Neataptic</span></h3>
-                    <p>This library provides the ability to quickly perform neuroevolution and backpropagation for the browser and Node.js. The library contains several built-in networks - perceptron, LSTM, GRU, Nark and others.</p>
-                </div>
-            </div>
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/MNIST.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h3><span class="text_border">MNIST</span></h3>
-                    <p>MNIST (Modified National Institute of Standards and Technology database) is a Arabic numeral handwriting database. There are over 60,000 handwriting samples of each digit in the database.</p>
-                </div>
+            <div class="text_center">
+                <h3><span class="text_border">MNIST</span></h3>
+                <img class="left" src="images/MNIST.png" alt="">
+                <p>MNIST (Modified National Institute of Standards and Technology database) is a Arabic <b>numeral handwriting database</b>. There are over 60,000 handwriting samples of each digit in the database.</p>
+                <p>The <b>data consists of pre-prepared sample images</b>, on the basis of which the systems are trained and tested. The database was created after revising the original 20x20 pixel set of NIST black and white samples.</p>
+                <p>There have been numerous attempts to achieve minimal error after training on the MNIST database, which have been discussed in the scientific literature. Record results were indicated in publications devoted to the use of convolutional neural networks, the error rate was brought to 0.23%. The creators of the database themselves have provided several testing methods. The original work indicates that the use of support vector machines achieves an error rate of 0.8%.</p>
+                <p>Some works note the high results of systems built on ensembles of several neural networks; at the same time, the quality of digit recognition for the MNIST base turns out to be comparable to that of a person, and for other recognition tasks, in particular, for road signs, it is even twice as good.</p>
             </div>
         </div>
     </div>
@@ -127,39 +129,13 @@
         <div class="main_center">
             <div class="text_center">
                 <h2><span class="text_border">An example of creating one of our neural networks.</span></h2>
-                <p>This neural network tries to recognize a handwritten digit. To train it, you will need to enter several samples of Arabic digits. To create it, you need a handwriting field. We used "canvas" as such a field. Buttons are also needed in order to record sample numbers and train the neural network. The image on the canvas is broken down into a grid of pixels. The pixelated image is saved as a vector of ones and zeros. Each such vector is written into a list, which is sent to the "brain.js" library for training the neural network. In order for the already trained neural network to analyze the input data, the "likely ()" function is called. You can download this project from this link.</p>
-                <p>THIS IS GIF, BELIEVE ME.</p>
+                <img class="left" src="images/teach.gif" alt="">
+                <p>This neural network tries to recognize a handwritten digit. To train it, you will need to enter several samples of Arabic digits. To create it, you need a handwriting field. We used "canvas" as such a field. Buttons are also needed in order to record sample numbers and train the neural network. The image on the canvas is broken down into a grid of pixels. The pixelated image is saved as a vector of ones and zeros. Each such vector is written into a list, which is sent to the "brain.js" library for training the neural network. In order for the already trained neural network to analyze the input data, the "likely ()" function is called. Link to the repository with this <a href="https://github.com/MakandIv/BrainTraining">project</a>.</p>
             </div>
         </div>
     </div>
-
-
     <div class="footer">
-        <h5><span class="text_border" style="color: white">References to sources</span></h5>
-        <div class="references row">
-            <div class="references-colomn col-lg-4">
-                <a href="https://plato.stanford.edu/archives/spr2019/entries/bayes-theorem/">Stanford Encyclopedia of Philosophy Archive</a><br>
-                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1751-5823.1998.tb00406.x">Wiley Online Library</a><br>
-                <a href="https://brilliant.org/wiki/markov-chains/">Brilliant.org</a><br>
-                <a href="https://link.springer.com/article/10.1023/A:1007662407062">link.springer.com</a><br>
-                <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43266.pdf">Recurrent neural network</a><br>
-            </div>
-            <div class="references-colomn col-lg-4">
-                <a href="http://rlbook.busoniu.net/">Reinforcement Learning</a><br>
-                <a href="https://web.archive.org/web/20160417030218/http://ect.bell-labs.com/who/tkh/publications/papers/odt.pdf">Random Forest Algorithm</a><br>
-                <a href="http://image.diku.dk/imagecanon/material/cortes_vapnik95.pdf">Support-vector machine</a><br>
-                <a href="https://web.archive.org/web/20180424203806/https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43905.pdf">LSTM</a><br>
-                <a href="https://www.dataversity.net/a-brief-history-of-machine-learning/">A Brief History of Machine Learning</a><br>
-            </div>
-            <div class="references-colomn col-lg-4">
-                <a href="https://www.dataversity.net/brief-history-deep-learning/">A Brief History of Deep Learning</a><br>
-                <a href="https://www.wordstream.com/blog/ws/2017/07/28/machine-learning-applications">WordStream</a><br>
-                <a href="https://towardsdatascience.com/understanding-neural-networks-19020b758230">Understanding Neural Networks</a><br>
-                <a href="http://web.csulb.edu/~wmartinz/rssc/content/w-grey-walter-and-his-turtle-robots.html">W. Grey Walter and his Turtle Robots</a>
-            </div>
-        </div>
-        <br><br>
-        <p style="margin-bottom: 0;">For Student Science Week:</p>
+        <h5 style=" margin-bottom: 15px"><span class="text_border" style="color: white">For Student Science Week:</span></h5>
         <p class="copyright" style="margin-bottom: 0;">&copy; Skrynnik A.E., Makushkin A.I., 2021</p>
         <p>Scientific director: Kuzmina E.V.</p>
     </div>

@@ -3,16 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Modern Inventions</title>
+    <title>Modern Inventions | Machine Learning</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-awesome.min.css" crossorigin="anonymous">
     <link href="styles/styles.css" rel="stylesheet" text="text/css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/preloader.css">
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inverse bg-dark">
-        <a class="navbar-brand" href="../"><img src="/images/Logo.png" alt="Machine Learning" height="40px"></a>
+    <div class="load">
+        <div class="container">
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inverse bg-dark">
+        <a class="navbar-brand" href="../"><img class="logo" src="/images/Logo.png" alt="Machine Learning" height="40px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,10 +43,13 @@
                 <li class="nav-item">
                     <a href="neuralnetwork.html" class="nav-link">Neural Network</a>
                 </li>
+                <li>
+                    <a href="sources.html" class="nav-link">Sources</a>
+                </li>
             </ul>
         </div>
     </nav>
-    <div class="main" style="background-image: linear-gradient(-40deg, #86C5FC 0%, #E8C3FD 100%)">
+    <div class="main" id="modern">
         <div id="headerwrap">
             <div class="row centered">
                 <div class="col-lg-12">
@@ -44,73 +57,69 @@
                 </div>
             </div>
         </div>
-        <div class="arrow_down">
-
-        </div>
     </div>
     <div class="body_bg black_bg">
         <div class="main_center">
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/googlebrain.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h2><span class="text_border">GoogleBrain</span></h2>
-                    <p>Google is at the forefront of innovation in Machine Intelligence, with active research exploring virtually all aspects of machine learning, including deep learning and more classical algorithms. Google brain was created in 2012. This was a deep neural network created by Jeff Dean of Google, which focused on pattern detection in images and videos. It was able to use Google’s resources, which made it incomparable to much smaller neural networks. It was later used to detect objects in YouTube videos.</p>
-                </div>
-            </div>
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/AlexNet-1-1.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h2><span class="text_border">AlexNet</span></h2>
-                    <p>Alexnet is a convolutional neural network (CNN) developed in 2012.  AlexNet won the ImageNet competition by a large margin in 2012, which led to the use of GPUs in machine learning. They also created ReLU, which is an activation function that greatly improves efficiency of CNNs.</p>
-                </div>
+            <div class="text_center" style="min-height: 800px;">
+
+                <h2><span class="text_border">GoogleBrain</span></h2>
+                <img class="left" src="images/googlebrain.png" alt="">
+                <p>Google is at the forefront of innovation in Machine Intelligence, with <b>active research exploring</b> virtually all aspects of machine learning, including deep learning and more classical algorithms. Google brain was created in 2012. This was a deep neural network created by Jeff Dean of Google, which focused on pattern detection in images and videos. It was able to use Google’s resources, which made it incomparable to much smaller neural networks.</p>
+                <p><b>Google Brain's mission</b> is to improve people's lives by building smarter machines. To do this, the team focuses on creating flexible models that are able to independently obtain features, as well as efficiently use data and computing power.</p>
+                <p><b>Recent achievements:</b></p>
+                <ul>
+                    <li>An encryption system developed by artificial intelligence.</li>
+                    <li>Increasing image resolution.</li>
+                    <li>Advanced word translation.</li>
+                    <li>Speech recognition system.</li>
+                </ul>
+
+                <h2><span class="text_border">AlexNet</span></h2>
+                <img class="left" src="images/AlexNet-1-1.png" alt="">
+                <p>AlexNet is a convolutional neural network (CNN) developed in 2012. AlexNet won the ImageNet competition by a large margin in 2012, which led to the use of GPUs in machine learning. They also <b>created ReLU</b>, which is an activation function that greatly improves efficiency of CNNs.</p>
+                <p>AlexNet <b>contained eight layers</b>; the first five were convolutional layers, some of them followed by max-pooling layers, and the last three were fully connected layers. It used the non-saturating ReLU activation function, which showed improved training performance over other.</p>
             </div>
         </div>
     </div>
     <div class="body_bg beige_bg">
         <div class="main_center">
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/deepface.jpg" alt="">
-                </div>
-                <div class="text_right">
-                    <h2><span class="text_border">DeepFace</span></h2>
-                    <p>DeepFace is a deep learning facial recognition system created by a research group at Facebook. It identifies human faces in digital images. It employs a nine-layer neural network with over 120 million connection weights and was trained on four million images uploaded by Facebook users.  DeepFace shows human-level performance. The Facebook Research team has stated that the DeepFace method reaches an accuracy of 97.35% ± 0.25% on Labeled Faces in the Wild (LFW) data set where human beings have 97.53%. This means that DeepFace is sometimes more successful than the human beings.</p>
-                </div>
+            <div class="text_center">
+                <h2><span class="text_border">DeepFace</span></h2>
+                <img class="right" src="images/deepface.jpg" alt="">
+                <p>DeepFace is a deep learning <b>facial recognition system</b> created by a research group at Facebook. It identifies human faces in digital images. It employs a nine-layer neural network with over 120 million connection weights and was trained on four million images uploaded by Facebook users. DeepFace shows human-level performance. The Facebook Research team has stated that the DeepFace method reaches an accuracy of 97.35% ± 0.25% on Labeled Faces in the Wild (LFW) data set where human beings have 97.53%. This means that DeepFace is sometimes more successful than the human beings.</p>
+                <p>The technology looks really amazing, especially against the background of not very successful attempts to create mechanisms for direct identification of people. Despite the early stage of development, the proposed system is able to significantly reduce the overall error in methods of face recognition and ratio.</p>
             </div>
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/deepmind.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h2><span class="text_border">DeepMind</span></h2>
-                    <p>This company was bought by Google, and can play basic video games to the same levels as humans. In 2016, it managed to beat a professional at the game Go, which is considered to be one the world’s most difficult board games. Today their programs have learned to diagnose eye diseases as effectively as the world’s top doctors, to save 30% of the energy used to keep data centres cool, and to predict the сomplex 3D shapes of proteins - which could one day transform how drugs are invented.</p>
-                </div>
+            <div class="text_center">
+                <h2><span class="text_border">DeepMind</span></h2>
+                <img class="right" src="images/deepmind.png" alt="">
+                <p>This company was bought by Google, and can play basic video games to the same levels as humans. In 2016, it managed <b>to beat a professional at the game Go</b>, which is considered to be one the world’s most difficult board games. Today their programs have learned to diagnose eye diseases as effectively as the world’s top doctors, to save 30% of the energy used to keep data centers cool, and to predict the complex 3D shapes of proteins - which could one day transform how drugs are invented.</p>
+                <p><b>The company's goal</b> is "to solve the problem of intelligence." To do this, they use "the best technologies, ranging from machine learning to systems psychophysiology, to ultimately create general-purpose learning algorithms." They are also working on formalizing intelligence in order not only to implement it in machines, but also to understand how the human brain works.</p>
+                <p><b>Direction of research:</b></p>
+                <ul>
+                    <li>Natural language comprehension by machines.</li>
+                    <li>Generating images from a template using neural networks.</li>
+                    <li>Speech recognition.</li>
+                    <li>Neural network learning algorithms.</li>
+                </ul>
             </div>
         </div>
     </div>
     <div class="body_bg white_bg">
         <div class="main_center">
-            <div class="double_block">
-                <div class="img_left">
-                    <img src="images/OpenAI.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h3><span class="text_border">OpenAI</span></h3>
-                    <p>This is a non-profit organisation created in 2015 by Elon Musk and others, to create safe artificial intelligence. OpenAI’s mission is to ensure that artificial general intelligence (AGI)—by which we mean highly autonomous systems that outperform humans at most economically valuable work—benefits all of humanity.</p>
-                </div>
+
+            <div class="text_center">
+                <h3><span class="text_border">OpenAI</span></h3>
+                <img class="left" src="images/OpenAI.png" alt="">
+                <p>This is a non-profit organization created in 2015 by Elon Musk and others, to create safe artificial intelligence. <b>OpenAI’s mission</b> is to ensure that artificial general intelligence (AGI)—by which we mean highly autonomous systems that outperform humans at most economically valuable work — <b>benefits all of humanity</b>.</p>
+                <p>On April 27, 2016, the company released a public beta of <b>OpenAI Gym</b>, a platform for developing and comparing reinforcement learning algorithms.</p>
+                <p>Reinforcement learning is one of the artificial intelligence algorithms that has recently shown good results in various complex fields: robotics, board games (AlphaGo), video games (DeepMind results). OpenAI Gym aims to provide a toolkit to assist in research in this area. The platform provides researchers with an easy-to-install framework with a collection of diverse learning test environments.</p>
+                <p>OpenAI Gym is implemented in the <b>Python</b> programming language, supports machine learning libraries <b>TensorFlow</b>, <b>Theano</b>.</p>
             </div>
-            <div class="double_block">
-                <div class="img_left">
-                <img src="images/AMLP.png" alt="">
-                </div>
-                <div class="text_right">
-                    <h3><span class="text_border">Amazon Machine Learning Platform</span></h3>
-                    <p>This is part of Amazon Web Services, and shows how most big companies want to get involved in machine learning. They say it drives many of their internal systems, from regularly used services such as search recommendations and Alexa, to more experimental ones like Prime Air and Amazon Go.</p>
-                </div>
+            <div class="text_center">
+                <h3><span class="text_border">Amazon Machine Learning Platform</span></h3>
+                <img class="left" src="images/AMLP.png" alt="">
+                <p>This is part of Amazon Web Services, and shows how most big companies want to get involved in machine learning. They say it drives many of their internal systems, from regularly used services such as search recommendations and Alexa, to more experimental ones like Prime Air and Amazon Go.</p>
+                <p>Amazon has created an IDE (Integrated Development Environment) that works with machine learning. Amazon <b>SageMaker</b> helps data scientists and developers to prepare, build, train, and deploy high-quality machine learning (ML) models quickly by bringing together a broad set of capabilities purpose-built for ML. Amazon SageMaker is built on Amazon’s two decades of experience developing real-world machine learning applications, including product recommendations, personalization, intelligent shopping, robotics, and voice-assisted devices.</p>
             </div>
         </div>
     </div>
@@ -129,37 +138,31 @@
         </div>
     </div>
     <div class="footer">
-        <h5><span class="text_border" style="color: white">References to sources</span></h5>
-        <div class="references row">
-            <div class="references-colomn col-lg-4">
-                <a href="https://plato.stanford.edu/archives/spr2019/entries/bayes-theorem/">Stanford Encyclopedia of Philosophy Archive</a><br>
-                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1751-5823.1998.tb00406.x">Wiley Online Library</a><br>
-                <a href="https://brilliant.org/wiki/markov-chains/">Brilliant.org</a><br>
-                <a href="https://link.springer.com/article/10.1023/A:1007662407062">link.springer.com</a><br>
-                <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43266.pdf">Recurrent neural network</a><br>
-            </div>
-            <div class="references-colomn col-lg-4">
-                <a href="http://rlbook.busoniu.net/">Reinforcement Learning</a><br>
-                <a href="https://web.archive.org/web/20160417030218/http://ect.bell-labs.com/who/tkh/publications/papers/odt.pdf">Random Forest Algorithm</a><br>
-                <a href="http://image.diku.dk/imagecanon/material/cortes_vapnik95.pdf">Support-vector machine</a><br>
-                <a href="https://web.archive.org/web/20180424203806/https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43905.pdf">LSTM</a><br>
-                <a href="https://www.dataversity.net/a-brief-history-of-machine-learning/">A Brief History of Machine Learning</a><br>
-            </div>
-            <div class="references-colomn col-lg-4">
-                <a href="https://www.dataversity.net/brief-history-deep-learning/">A Brief History of Deep Learning</a><br>
-                <a href="https://www.wordstream.com/blog/ws/2017/07/28/machine-learning-applications">WordStream</a><br>
-                <a href="https://towardsdatascience.com/understanding-neural-networks-19020b758230">Understanding Neural Networks</a><br>
-                <a href="http://web.csulb.edu/~wmartinz/rssc/content/w-grey-walter-and-his-turtle-robots.html">W. Grey Walter and his Turtle Robots</a>
-            </div>
-        </div>
-        <br><br>
-        <p style="margin-bottom: 0;">For Student Science Week:</p>
+        <h5 style=" margin-bottom: 15px"><span class="text_border" style="color: white">For Student Science Week:</span></h5>
         <p class="copyright" style="margin-bottom: 0;">&copy; Skrynnik A.E., Makushkin A.I., 2021</p>
         <p>Scientific director: Kuzmina E.V.</p>
     </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#modern",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            points: 18.00,
+            maxDistance: 25.00,
+            spacing: 14.00
+        })
+
+    </script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@ function scrollTop() {
                 anim = 1;
             }
         }
-        if (!url == "/sources.html") {
+        if (url != "/sources.html") {
             if ($(window).scrollTop() > (height)) {
                 $(".main_center:eq(" + num_block + ")").animate({
                     paddingTop: 25
